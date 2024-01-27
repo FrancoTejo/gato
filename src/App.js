@@ -11,10 +11,23 @@ const [score, setScore] = useState ({
   o:0,
 });
 
+  const checkWinner = squares =>{
+    setTurn(turn ==='x' ? 'o': 'x')
+  }
+
+
+
+  const handleClick = square => {
+    let newSquares = [...squares];
+    newSquares.splice(square, 1, turn);
+    setSquares(newSquares);
+    checkWinner(newSquares);
+  }
+
   
   return (
     <div className="container">
-      <Board squares={squares}/>
+      <Board squares={squares} onClick={handleClick}/>
     </div>
   );
 }
