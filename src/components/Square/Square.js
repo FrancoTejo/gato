@@ -3,7 +3,9 @@ import './Square.css'
 const Square = ({ value })  => {
 
     return(
-        <div className="square"></div>
+        <div className="square">
+            
+        </div>
     )
 };
 

@@ -4,7 +4,7 @@ import Board from './components/Board/Board';
 
 const App = () => {
 
-const [turno, setTurno]= useState ('x');
+const [turn, setTurn]= useState ('x');
 const [squares, setSquares] = useState (Array(9).fill(null));
 const [score, setScore] = useState ({
   x:0,
