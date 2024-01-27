@@ -12,7 +12,7 @@ const [score, setScore] = useState ({
 });
 
   const checkWinner = squares =>{
-    setTurn(turn ==='x' ? 'o': 'x')
+    setTurn(turn === 'x' ? 'o': 'x')
   }
 
 
