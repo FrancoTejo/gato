@@ -1,11 +1,12 @@
-import Square from "../Square/Square";
+import Square from "../Square/square";
+import './Board.css'
 
 const Board = ({squares}) => {
 
     const createSquares = values => (
         values.map(value => 
-            (
-            <Square value={squares[value]} key={`square_${value}`}/>
+            (                
+                <Square value={squares[value]} key={`square_${value}`}/>
             )
         )
     );
@@ -13,7 +14,7 @@ const Board = ({squares}) => {
     return (
 
         <div className="board">
-            <div className="row">
+            <div className="row">                
                 {createSquares([0,1,2])}
             </div>
             <div className="row">

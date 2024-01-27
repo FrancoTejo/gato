@@ -1,3 +1,5 @@
+import './Square.css'
+
 const Square = ({ value })  => {
 
     return(
