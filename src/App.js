@@ -27,7 +27,7 @@ const [score, setScore] = useState ({
   
   return (
     <div className="container">
-      <Board squares={squares} onClick={handleClick}/>
+      <Board turn = {turn} squares={squares} onClick={handleClick}/>
     </div>
   );
 }
