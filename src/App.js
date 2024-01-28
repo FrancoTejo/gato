@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Board from './components/Board/Board';
+import ScoreBoard from './components/ScoreBoard/ScoreBoard';
 
 
 
@@ -79,6 +80,7 @@ const [score, setScore] = useState ({
   return (
     <div className="container">
       <Board winningSquares = {winningSquares} turn = {turn} squares={squares} onClick={handleClick}/>
+      <ScoreBoard scoreO={score.o} scoreX={score.x}/>
     </div>
   );
 }
